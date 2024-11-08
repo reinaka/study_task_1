@@ -2,9 +2,15 @@
 .content {
   width: 100dvw;
   height: 100dvh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   letter-spacing: 0.05rem;
 }
 
@@ -22,7 +28,9 @@
   bottom: 150%;
   left: 50%;
   padding: 8px;
-  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
   border-radius: 8px;
   background-color: #000;
   color: #fff;
@@ -33,5 +41,7 @@
 .tooltip__text:hover:after {
   visibility: visible;
   opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-}/*# sourceMappingURL=index.css.map */
+}
