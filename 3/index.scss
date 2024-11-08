@@ -1,0 +1,33 @@
+@import '../reset.css';
+@import '../variables';
+@import './styles/grid';
+@import './styles/flex';
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.heading {
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.card {
+    border-radius: 8px;
+    background-color: $gray_light;
+    padding: 20px;
+    min-width: 200px;
+}
+
+.card__title {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.card__text {
+    font-size: 14px;
+}

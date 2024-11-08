@@ -1,47 +1,37 @@
 @import '../reset.css';
 .content {
-    width: 100dvw;
-    height: 100dvh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    letter-spacing: 0.05rem;
-  }
-  
-  .tooltip__text {
-    position: relative;
-    z-index: 2;
-    cursor: pointer;
-  }
-  
-  .tooltip__text:after {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
-    bottom: 150%;
-    left: 50%;
-    padding: 8px;
-    -webkit-transform: translate(-50%);
-        -ms-transform: translate(-50%);
-            transform: translate(-50%);
-    border-radius: 8px;
-    background-color: #000;
-    color: #fff;
-    content: attr(data-tooltip);
-    text-align: center;
-  }
-  
-  .tooltip__text:hover:after {
-    visibility: visible;
-    opacity: 1;
-    -webkit-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-  }
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.05rem;
+}
+
+.tooltip__text {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.tooltip__text:after {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  padding: 8px;
+  transform: translate(-50%);
+  border-radius: 8px;
+  background-color: #000;
+  color: #fff;
+  content: attr(data-tooltip);
+  text-align: center;
+}
+
+.tooltip__text:hover:after {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}/*# sourceMappingURL=index.css.map */
