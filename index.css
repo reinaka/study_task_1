@@ -21,7 +21,7 @@ main {
     color: #9baacf;
 }
 
-a:visited {
+a, a:hover, a:active, a:focus, a:visited {
     color: #9baacf; 
 }
 
@@ -69,4 +69,3 @@ a:visited {
             box-shadow: inset .2rem .2rem .5rem #c8d0e7, 
     inset -.2rem -.2rem .5rem #fff;
 }
-
