@@ -1,5 +1,5 @@
 @import '../reset.css';
-.layout--grid {
+.layout_grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto 20px auto 20px auto 20px auto 20px auto;
@@ -8,7 +8,7 @@
       grid-template-areas: "card1" "card2" "card3" "card4" "card5";
 }
 @media (min-width: 460px) {
-  .layout--grid {
+  .layout_grid {
     -ms-grid-columns: (auto)[2];
     grid-template-columns: repeat(2, auto);
     -ms-grid-rows: (auto)[3];
@@ -17,7 +17,7 @@
   }
 }
 @media (min-width: 680px) {
-  .layout--grid {
+  .layout_grid {
     -ms-grid-columns: 2fr 1fr 1fr 2fr;
     grid-template-columns: 2fr 1fr 1fr 2fr;
     -ms-grid-rows: (auto)[2];
@@ -26,7 +26,7 @@
   }
 }
 @media (min-width: 900px) {
-  .layout--grid {
+  .layout_grid {
     -ms-grid-columns: (auto)[4];
     grid-template-columns: repeat(4, auto);
     -ms-grid-rows: (auto)[2];
@@ -35,7 +35,7 @@
   }
 }
 @media (min-width: 1120px) {
-  .layout--grid {
+  .layout_grid {
     -ms-grid-columns: (auto)[5];
     grid-template-columns: repeat(5, auto);
     -ms-grid-rows: 1fr;
@@ -43,131 +43,131 @@
         grid-template-areas: "card1 card2 card3 card4 card5";
   }
 }
-.layout--grid .card--1 {
+.layout_grid .card_1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: card1;
 }
-.layout--grid .card--2 {
+.layout_grid .card_2 {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: card2;
 }
-.layout--grid .card--3 {
+.layout_grid .card_3 {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: card3;
 }
-.layout--grid .card--4 {
+.layout_grid .card_4 {
   -ms-grid-row: 7;
   -ms-grid-column: 1;
   grid-area: card4;
 }
-.layout--grid .card--5 {
+.layout_grid .card_5 {
   -ms-grid-row: 9;
   -ms-grid-column: 1;
   grid-area: card5;
 }
-@media (min-width: 460px) {
-  .layout--grid .card--1 {
+@media (min-width: 460px){
+  .layout_grid .card_1 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
-  .layout--grid .card--2 {
+  .layout_grid .card_2 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
   }
-  .layout--grid .card--3 {
+  .layout_grid .card_3 {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
   }
-  .layout--grid .card--4 {
+  .layout_grid .card_4 {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
   }
-  .layout--grid .card--5 {
+  .layout_grid .card_5 {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
   }
 }
-@media (min-width: 680px) {
-  .layout--grid .card--1 {
+@media (min-width: 680px){
+  .layout_grid .card_1 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
-  .layout--grid .card--2 {
+  .layout_grid .card_2 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     -ms-grid-column-span: 2;
   }
-  .layout--grid .card--3 {
+  .layout_grid .card_3 {
     -ms-grid-row: 1;
     -ms-grid-column: 4;
   }
-  .layout--grid .card--4 {
+  .layout_grid .card_4 {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
   }
-  .layout--grid .card--5 {
+  .layout_grid .card_5 {
     -ms-grid-row: 2;
     -ms-grid-column: 3;
     -ms-grid-column-span: 2;
   }
 }
-@media (min-width: 900px) {
-  .layout--grid .card--1 {
+@media (min-width: 900px){
+  .layout_grid .card_1 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
-  .layout--grid .card--2 {
+  .layout_grid .card_2 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
   }
-  .layout--grid .card--3 {
+  .layout_grid .card_3 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
-  .layout--grid .card--4 {
+  .layout_grid .card_4 {
     -ms-grid-row: 1;
     -ms-grid-column: 4;
     -ms-grid-column-span: 1;
   }
-  .layout--grid .card--5 {
+  .layout_grid .card_5 {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
   }
 }
-@media (min-width: 1120px) {
-  .layout--grid .card--1 {
+@media (min-width: 1120px){
+  .layout_grid .card_1 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
-  .layout--grid .card--2 {
+  .layout_grid .card_2 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
   }
-  .layout--grid .card--3 {
+  .layout_grid .card_3 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
-  .layout--grid .card--4 {
+  .layout_grid .card_4 {
     -ms-grid-row: 1;
     -ms-grid-column: 4;
     -ms-grid-column-span: 1;
   }
-  .layout--grid .card--5 {
+  .layout_grid .card_5 {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
     -ms-grid-column-span: 1;
   }
 }
 
-.layout--flex {
+.layout_flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,7 +179,7 @@
       flex-wrap: wrap;
   gap: 20px;
 }
-.layout--flex .card {
+.layout_flex .card {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
